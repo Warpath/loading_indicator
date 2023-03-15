@@ -14,7 +14,7 @@ class BallPulse extends StatefulWidget {
 
 class _BallPulseState extends State<BallPulse>
     with TickerProviderStateMixin, IndicatorController {
-  static const _durationInMills = 3000;
+  static const _durationInMills = 1000;
 
   static const _delayInMills = [
     120,
@@ -40,8 +40,8 @@ class _BallPulseState extends State<BallPulse>
         duration: const Duration(milliseconds: _durationInMills),
       ));
       _scaleAnimations.add(TweenSequence([
-        TweenSequenceItem(tween: Tween(begin: 1.0, end: 0.5), weight: 45),
-        TweenSequenceItem(tween: Tween(begin: 0.5, end: 1.0), weight: 35),
+        TweenSequenceItem(tween: Tween(begin: 1.0, end: 0.4), weight: 45),
+        TweenSequenceItem(tween: Tween(begin: 0.4, end: 1.0), weight: 35),
         TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.0), weight: 20),
       ]).animate(
           CurvedAnimation(parent: _animationControllers[i], curve: cubic)));
