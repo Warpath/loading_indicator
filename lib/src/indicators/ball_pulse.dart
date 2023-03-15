@@ -17,9 +17,9 @@ class _BallPulseState extends State<BallPulse>
   static const _durationInMills = 1000;
 
   static const _delayInMills = [
-    120,
-    240,
-    360,
+    150,
+    300,
+    450,
   ];
 
   final List<AnimationController> _animationControllers = [];
