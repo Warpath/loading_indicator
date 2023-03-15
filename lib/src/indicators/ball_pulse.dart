@@ -14,7 +14,7 @@ class BallPulse extends StatefulWidget {
 
 class _BallPulseState extends State<BallPulse>
     with TickerProviderStateMixin, IndicatorController {
-  static const _durationInMills = 750;
+  static const _durationInMills = 1500;
 
   static const _delayInMills = [
     120,
